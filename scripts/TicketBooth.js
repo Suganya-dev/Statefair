@@ -14,6 +14,7 @@ export const TicketBooth = () => {
     contentTarget.innerHTML = `
         <div class="ticketBooth">
         <button id="rideTicket">Ride Ticket</button>
+        <button id="rideTicket">Food Ticket</button>
         </div>
     `
 }
