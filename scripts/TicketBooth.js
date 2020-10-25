@@ -1,7 +1,6 @@
 const contentTarget = document.querySelector(".entry")
+// const contentTarget = document.querySelector(".attractions")
 const eventHub = document.querySelector("#state-fair")
-
-
 
 eventHub.addEventListener("click",clickEvent =>{
     if(clickEvent.target.id === "rideTicket"){
