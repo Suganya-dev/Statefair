@@ -4,11 +4,10 @@ const contentTarget = document.querySelector(".rides")
 
 
 export const FoodTicketHolder = () => { 
-eventHub.addEventListener("rideTicketPurchased",customEvent =>{
+eventHub.addEventListener("foodticketPurchased",customEvent =>{
     contentTarget.innerHTML +=
 `  
-
-<div class="people food"></div>
+<div class="food eater"></div>
 `
 } )
 }
