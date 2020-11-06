@@ -1,28 +1,29 @@
 const eventHub = document.querySelector("#state-fair")
-const contentTarget = document.querySelector(".attractions")
+const contentTarget1 = document.querySelector(".food")
+const contentTarget2 = document.querySelector(".rides")
+const contentTarget3 = document.querySelector(".games")
+const contentTarget4 = document.querySelector(".sideshow")
+
 
 eventHub.addEventListener("fullPackageTicketPurchased",() =>{
-    contentTarget.innerHTML += `
-    <div class="people rides">
- <div class="person bigSpender"></div>
- </div>
-     `})
+    contentTarget2.innerHTML += `
+   <div class="person bigSpender"></div>
+  `})
 
 eventHub.addEventListener("fullPackageTicketPurchased",() =>{
-    contentTarget.innerHTML += `
-    <div class="people food">
-    <div class="person bigSpender" </div>
-    </div>`
+    contentTarget1.innerHTML += `
+     <div class="person bigSpender" </div>
+    `
 })
 
-// eventHub.addEventListener("fullPackageTicketPurchased",() =>{
-//     contentTarget.innerHTML += `
-//     <div class="people games">
-//     <div class="person bigSpender" </div>
-//     </div>`
-// })
+eventHub.addEventListener("fullPackageTicketPurchased",() =>{
+    contentTarget3.innerHTML += `
+   <div class="person bigSpender" </div>
+    `
+})
 
-// eventHub.addEventListener("fullPackageTicketPurchased",() =>{
-//     contentTarget.innerHTML += `
-//     <div class="person bigSpender" </div>`
-// })
+eventHub.addEventListener("fullPackageTicketPurchased",() =>{
+    contentTarget4.innerHTML += `
+   <div class="person bigSpender" </div>
+    `
+})
