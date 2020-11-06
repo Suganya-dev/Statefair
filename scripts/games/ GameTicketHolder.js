@@ -1,12 +1,21 @@
-const eventHub = document.querySelector("#state-fair")
-const contentTarget = document.querySelector(".attraction")
+// const eventHub = document.querySelector("#state-fair")
+// const contentTarget = document.querySelector(".games")
 
-export const GameTicketHolders = ()=>{
-    eventHub.addEventListener("gameticketPurchased",CustomEvent=> {
-     contentTarget.innerHTML +=
-        `
-        <div class="people games"></div>
-    `
-    })
-    }
-   
+
+//     eventHub.addEventListener("gameticketPurchased",() => {
+//      contentTarget.innerHTML +=
+//         `
+//         <div class="person player"></div>
+//     `
+//     })
+    
+const eventHub=document.querySelector("#state-fair")
+const contentTarget = document.querySelector(".games")
+
+eventHub.addEventListener("gameticketPurchased",() =>{
+   contentTarget.innerHTML +=
+   `
+   <div class="person player">
+    </div>`
+
+})

@@ -1,15 +1,17 @@
-import {TicketBooth} from "./TicketBooth.js"
+
 const eventHub= document.querySelector("#state-fair")
-const contentTarget = document.querySelector(".attraction")
+const contentTarget = document.querySelector(".food")
 
 
-export const FoodTicketHolder = () => { 
-eventHub.addEventListener("foodticketPurchased",customEvent =>{
-    contentTarget.innerHTML +=
-`  
-<div class="people food"></div>
-`
-} )
-}
+
+
+    eventHub.addEventListener("foodTicketPurchased",() => {
+        //  console.log("foodTicketPurchased",customEvent)
+        contentTarget.innerHTML +=
+        `
+       <div class="person eater"></div>
+        
+        `
+    })
 
 
